@@ -17,6 +17,9 @@
         <include>README.md</include>
       </includes>
     </fileSet>
+    <fileSet>
+      <directory>cicd</directory>
+    </fileSet>
     <fileSet filtered="true" packaged="true">
       <directory>src/main/java</directory>
     </fileSet>

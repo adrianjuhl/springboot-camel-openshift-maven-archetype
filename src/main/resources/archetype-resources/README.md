@@ -28,6 +28,19 @@ Verify locally
 $ curl http://127.0.0.1:8080/api/readinessprobe
 ```
 
+${hash}${hash} Deploy kickstart pipeline to OpenShift
+
+```
+# From root directory of repo:
+$ ./cicd/deploy-kickstart-pipeline.sh --application-name <app-name> --source-repo-git-uri <source-repo-uri> --openshift-url <openshift-url> --jenkins-build-namespace <build-namespace>
+```
+
+Start the kickstart pipeline
+
+```
+$ oc start-build <app-name>-kickstart --namespace <build-namespace>
+```
+
 ${hash} Author Information
 
 See the commit history.
